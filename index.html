@@ -1,0 +1,95 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Maddie ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff69b4, #8a2be2, #00bfff);
+            color: white;
+            text-align: center;
+        }
+
+        .box {
+            background: rgba(0, 0, 0, 0.25);
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 35px;
+        }
+
+        button {
+            font-size: 25px;
+            padding: 15px 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            color: white;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        #yes {
+            background: #00c853;
+        }
+
+        #no {
+            background: #ff1744;
+        }
+
+        #lovePage {
+            display: none;
+        }
+
+        #lovePage h1 {
+            font-size: 55px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Question page -->
+    <div class="box" id="questionPage">
+        <h1>Do you love me Maddie? ❤️</h1>
+
+        <button id="yes" onclick="showLove()">YES 💕</button>
+        <button id="no" onclick="sayNo()">NO 😭</button>
+    </div>
+
+    <!-- Love page -->
+    <div class="box" id="lovePage">
+        <h1>I LOVE YOU TO MADDIE ❤️</h1>
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("questionPage").style.display = "none";
+            document.getElementById("lovePage").style.display = "block";
+        }
+
+        function sayNo() {
+            alert("WRONG ANSWER 😭❤️");
+        }
+    </script>
+
+</body>
+</html>
+```
